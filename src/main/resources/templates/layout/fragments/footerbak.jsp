@@ -10,37 +10,37 @@
 	<!-- Title Tag  -->
     <title>매직노티 - 매직 더 개더링 카드 가격 알림 서비스</title>
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="../../images/favicon.png">
+	<link rel="icon" type="image/png" href="../../../static/images/favicon.png">
 	<!-- Web Font -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
 	
 	<!-- StyleSheet -->
 	
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="../../css/bootstrap.css">
+	<link rel="stylesheet" href="../../../static/css/bootstrap.css">
 	<!-- Magnific Popup -->
-    <link rel="stylesheet" href="../../css/magnific-popup.min.css">
+    <link rel="stylesheet" href="../../../static/css/magnific-popup.min.css">
 	<!-- Font Awesome -->
-    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../../static/css/font-awesome.css">
 	<!-- Fancybox -->
-	<link rel="stylesheet" href="../../css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="../../../static/css/jquery.fancybox.min.css">
 	<!-- Themify Icons -->
-    <link rel="stylesheet" href="../../css/themify-icons.css">
+    <link rel="stylesheet" href="../../../static/css/themify-icons.css">
 	<!-- Nice Select CSS -->
-    <link rel="stylesheet" href="../../css/niceselect.css">
+    <link rel="stylesheet" href="../../../static/css/niceselect.css">
 	<!-- Animate CSS -->
-    <link rel="stylesheet" href="../../css/animate.css">
+    <link rel="stylesheet" href="../../../static/css/animate.css">
 	<!-- Flex Slider CSS -->
-    <link rel="stylesheet" href="../../css/flex-slider.min.css">
+    <link rel="stylesheet" href="../../../static/css/flex-slider.min.css">
 	<!-- Owl Carousel -->
-    <link rel="stylesheet" href="../../css/owl-carousel.css">
+    <link rel="stylesheet" href="../../../static/css/owl-carousel.css">
 	<!-- Slicknav -->
-    <link rel="stylesheet" href="../../css/slicknav.min.css">
+    <link rel="stylesheet" href="../../../static/css/slicknav.min.css">
 	
 	<!-- Eshop StyleSheet -->
-	<link rel="stylesheet" href="../../css/reset.css">
-	<link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
+	<link rel="stylesheet" href="../../../static/css/reset.css">
+	<link rel="stylesheet" href="../../../static/style.css">
+    <link rel="stylesheet" href="../../../static/css/responsive.css">
 </head>
 <body class="js">
 	<!-- Start Footer Area -->
@@ -53,7 +53,7 @@
 						<!-- Single Widget -->
 						<div class="single-footer about">
 							<div class="logo">
-								<a href="../../index.html"><img src="../../images/logo2.png" alt="#"></a>
+								<a href="../../index.html"><img src="../../../static/images/logo2.png" alt="#"></a>
 							</div>
 							<p class="text">매직노티는 거래 당사자(판매자, 구매자)가 아니며 항목 탐색을 위한 상품 정보외의 어떤 절차에도 관여하지 않고 이에 어떠한 의무와 책임도 부담하지 않습니다.</p>
 							<p class="call">궁금한 점이 있습니까?<span><a href="tel:01025183534">01025183534</a></span></p>
@@ -118,36 +118,36 @@
 	<!-- /End Footer Area -->
  
 	<!-- Jquery -->
-    <script src="../../js/jquery.min.js"></script>
-    <script src="../../js/jquery-migrate-3.0.0.js"></script>
-	<script src="../../js/jquery-ui.min.js"></script>
+    <script src="../../../static/js/jquery.min.js"></script>
+    <script src="../../../static/js/jquery-migrate-3.0.0.js"></script>
+	<script src="../../../static/js/jquery-ui.min.js"></script>
 	<!-- Popper JS -->
-	<script src="../../js/popper.min.js"></script>
+	<script src="../../../static/js/popper.min.js"></script>
 	<!-- Bootstrap JS -->
-	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../../static/js/bootstrap.min.js"></script>
 	<!-- Color JS -->
 	<script src="js/colors.js"></script>
 	<!-- Slicknav JS -->
-	<script src="../../js/slicknav.min.js"></script>
+	<script src="../../../static/js/slicknav.min.js"></script>
 	<!-- Owl Carousel JS -->
-	<script src="../../js/owl-carousel.js"></script>
+	<script src="../../../static/js/owl-carousel.js"></script>
 	<!-- Magnific Popup JS -->
-	<script src="../../js/magnific-popup.js"></script>
+	<script src="../../../static/js/magnific-popup.js"></script>
 	<!-- Waypoints JS -->
-	<script src="../../js/waypoints.min.js"></script>
+	<script src="../../../static/js/waypoints.min.js"></script>
 	<!-- Countdown JS -->
-	<script src="../../js/finalcountdown.min.js"></script>
+	<script src="../../../static/js/finalcountdown.min.js"></script>
 	<!-- Nice Select JS -->
-	<script src="../../js/nicesellect.js"></script>
+	<script src="../../../static/js/nicesellect.js"></script>
 	<!-- Flex Slider JS -->
-	<script src="../../js/flex-slider.js"></script>
+	<script src="../../../static/js/flex-slider.js"></script>
 	<!-- ScrollUp JS -->
-	<script src="../../js/scrollup.js"></script>
+	<script src="../../../static/js/scrollup.js"></script>
 	<!-- Onepage Nav JS -->
-	<script src="../../js/onepage-nav.min.js"></script>
+	<script src="../../../static/js/onepage-nav.min.js"></script>
 	<!-- Easing JS -->
-	<script src="../../js/easing.js"></script>
+	<script src="../../../static/js/easing.js"></script>
 	<!-- Active JS -->
-	<script src="../../js/active.js"></script>
+	<script src="../../../static/js/active.js"></script>
 </body>
 </html>

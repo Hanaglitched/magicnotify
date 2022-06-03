@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	  layout:decorator="~{layout/layout}">
-<th:block layout:fragment="content">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<!-- head fragment start -->
+<div th:replace="/layout/fragments/head :: headFragment"></div>
+<!-- head fragment end -->
+<body>
+	<!-- header fragment start -->
+	<div th:replace="/layout/fragments/header :: headerFragment"></div>
+	<!-- header fragment start -->
+
 	<!-- Preloader -->
 	<div class="preloader">
 		<div class="preloader-inner">
@@ -1747,7 +1752,11 @@
 		</div>
 	</div>
 	<!-- End Most Popular Area -->
-
-
-</th:block>
+	<!-- footer fragment start -->
+	<div th:replace="/layout/fragments/footer :: footerFragment"></div>
+	<!-- footer fragment end -->
+	<!-- script fragment start -->
+	<div th:replace="/layout/fragments/scripts :: scriptFragment"></div>
+	<!-- script fragment end -->
+</body>
 </html>
