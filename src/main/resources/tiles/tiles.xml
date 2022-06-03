@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout-wc"  template="/resource/common/layout.jsp">
+        <put-attribute name="title" value="매직노티 - 매직 더 개더링 카드 가격 알림 서비스" />
+        <put-attribute name="header-wc" value="/resource/common/header-with-category.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/resource/common/footer.jsp" />
+    </definition>
+
+    <definition name="baseLayout-woc"  template="/resource/common/layout.jsp">
+        <put-attribute name="title" value="매직노티 - 매직 더 개더링 카드 가격 알림 서비스" />
+        <put-attribute name="header-woc" value="/resource/common/header-without-category.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/resource/common/footer.jsp" />
+    </definition>
+
+    <definition name="main" extends="baseLayout_wc">
+        <put-attribute name="body" value="/resource/main.jsp" />
+    </definition>
+    <!--
+    help:
+    https://aljjabaegi.tistory.com/569
+    -->
+</tiles-definitions>
