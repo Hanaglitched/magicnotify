@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout/layout}">
+<body class="js">
+<div layout:fragment="content">
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="preloader-inner">
+			<div class="preloader-icon">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>
+	<!-- End Preloader -->
+	
+	<!-- Eshop Color Plate -->
+	<div class="color-plate ">
+		<a class="color-plate-icon"><i class="ti-paint-bucket"></i></a>
+		<h4>Eshop Colors</h4>
+		<p>Here is some awesome color's available on Eshop Template.</p>
+		<span class="color1"></span>
+		<span class="color2"></span>
+		<span class="color3"></span>
+		<span class="color4"></span>
+		<span class="color5"></span>
+		<span class="color6"></span>
+		<span class="color7"></span>
+		<span class="color8"></span>
+		<span class="color9"></span>
+		<span class="color10"></span>
+		<span class="color11"></span>
+		<span class="color12"></span>
+	</div>
+	<!-- /End Color Plate -->
+
+	<!-- Breadcrumbs -->
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="bread-inner">
+						<ul class="bread-list">
+							<li><a href="index1.html">Home<i class="ti-arrow-right"></i></a></li>
+							<li class="active"><a href="blog-single.html">About Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumbs -->
+	
+	<!-- About Us -->
+	<section class="about-us section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="about-content">
+							<h3><span>매직노티</span>에 어서 오세요!</h3>
+							<p>CardKingdom과 같은 대형 카드샵에서 매직 더 개더링 카드를 사려는데, 매일매일 검색하는것이 지치죠?</p>
+							<p>매직노티는 CardKingdom과 같은 카드샵에서 사용자가 원하는 조건의 매물이 나타나면 웹 푸시를 통해 알려주는 서비스입니다.</p>
+							<p>거대한 축제의 에이돌론을 사려고 했는데 out of stock인가요? 매일 샵 홈페이지에서 검색하는 것이 고되시나요? 매직노티에서는 그런 작업을 자동화하여 사용자가 카드 탐색에 드는 시간을 아낄 수 있게 도와줍니다.</p>
+							<div class="button">
+								<a th:href="@{contact.html}" class="btn primary">연락하기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+	<!-- End About Us -->
+</div>
+</body>
+</html>

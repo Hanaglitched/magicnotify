@@ -41,7 +41,7 @@
                 <div class="col-lg-2 col-md-2 col-12">
                     <!-- Logo -->
                     <div class="logo">
-                        <a href="../../index.html"><img src="../../../images/logo.png" alt="logo"></a>
+                        <a th:href="@{../../index.html}"><img src="../../../images/logo.png" alt="logo"></a>
                     </div>
                     <!--/ End Logo -->
                     <!-- Search Form -->
@@ -171,23 +171,8 @@
                                         <ul class="nav main-menu menu navbar-nav">
                                             <li class="active"><a href="#">메인</a></li>
                                             <li><a href="#">카드 탐색</a></li>
-                                            <!-- if there is anything new(unused feature)-->
-                                            <!--
-                                            <li><a href="#">Shop<i class="ti-angle-down"></i><span class="new">New</span></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="cart.html">Cart</a></li>
-                                                    <li><a href="checkout.html">Checkout</a></li>
-                                                </ul>
-                                            </li>
-                                            -->
-                                            <!--
-                                            <li><a href="#">Blog<i class="ti-angle-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="blog-single-sidebar.html">Blog Single Sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            -->
-                                            <li><a href="contact.html">연락하기</a></li>
+                                            <li><a th:href="@{about-us.html}">사이트 소개</a></li>
+                                            <li><a th:href="@{contact.html}">연락하기</a></li>
                                         </ul>
                                     </div>
                                 </div>
