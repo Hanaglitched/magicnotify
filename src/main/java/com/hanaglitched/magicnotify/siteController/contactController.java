@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 public class contactController {
     public contactController() {
     }
-    @GetMapping({"/contact.html"})
-    public String contact(Model model) {
+    @GetMapping("contact.html")
+    public String contact(HttpServletRequest request, HttpServletResponse response) {
         return "contact.html";
     }
 }
