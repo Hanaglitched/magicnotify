@@ -1,4 +1,4 @@
-package com.hanaglitched.magicnotify.siteController;
+package com.hanaglitched.magicnotify.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
