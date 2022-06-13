@@ -18,18 +18,30 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .headers().frameOptions().disable()
+
                 .and()
                 .authorizeRequests()
-                .antMatchers("/","/style.css", "/css/**", "/images/**", "/fonts/**", "/js/**", "/h2-console/**", "/profile").permitAll()
+                .antMatchers("/","/*.html","/login",
+                        "/style.css", "/css/**", "/images/**", "/fonts/**", "/js/**",
+                        "/h2-console/**", "/profile").permitAll()
                 .antMatchers("/api/v1/**").hasRole(Role.USER.name())
                 .anyRequest().authenticated()
+
+                .and()
+                .oauth2Login().loginPage("/login")
+
                 .and()
                 .logout()
                 .logoutSuccessUrl("/")
+
                 .and()
                 .oauth2Login()
                 .userInfoEndpoint()
                 .userService(customOAuth2UserService);
     }
-
+    /*
+    line 1 : accessible sites(all access)
+    line 2 : statics
+    line 3 : others
+     */
 }

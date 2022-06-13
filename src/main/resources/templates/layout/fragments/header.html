@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 
 <th:block th:fragment="headerFragment">
@@ -22,13 +23,29 @@
                 </div>
                 <div class="col-lg-7 col-md-12 col-12">
                     <!-- Top Right -->
-                    <div class="right-content">
-                        <ul class="list-main">
-                            <li><i class="ti-bell"></i> <a href="#">매물 알림</a></li>
-                            <li><i class="ti-user"></i> <a href="#">내 계정</a></li>
-                            <li><i class="ti-power-off"></i><a href="login.html#">로그인</a></li>
-                        </ul>
+                    <!-- start login = true -->
+                    <div sec:authorize="!isAuthenticated()">
+                        <div class="right-content">
+                            <ul class="list-main">
+                                <li><i class="ti-bell"></i> <a href="#">매물 알림</a></li>
+                                <li><i class="ti-user"></i> <a href="#">내 계정</a></li>
+                                <li><i class="ti-power-off"></i><a th:href="@{/login}">로그인</a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <!-- end login = true -->
+
+                    <!-- start login = false -->
+                    <div sec:authorize="isAuthenticated()">
+                        <div class="right-content">
+                            <ul class="list-main">
+                                <li><i class="ti-bell"></i> <a href="#">매물 알림</a></li>
+                                <li><i class="ti-user"></i> <a href="#">내 계정</a></li>
+                                <li><i class="ti-power-off"></i><a th:href="@{/logout}">로그아웃</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end login = false -->
                     <!-- End Top Right -->
                 </div>
             </div>

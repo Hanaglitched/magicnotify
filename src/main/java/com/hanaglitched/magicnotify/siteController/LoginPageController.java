@@ -5,14 +5,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class shoplistController {
-    public shoplistController() {
+public class LoginPageController {
+    public LoginPageController() {
     }
-    @SuppressWarnings("unchecked")
+    @GetMapping({"/login.html"})
+    public String index(Model model) {
+        return "login";
+    }
 
 
-    @GetMapping({"/shop-list.html"})
-    public String shoplist(Model model) {
-        return "shop-list.html";
-    }
 }
