@@ -28,8 +28,28 @@ public class MagicnotifyApplication {
 			JSONObject firstCard = (JSONObject) cards.get(0);
 
 			System.out.println(firstCard.get("name").toString());
+			JSONObject identifiers = (JSONObject) firstCard.get("identifiers");
+			String multiverseId = identifiers.get("multiverseId").toString();
+			String uuid = firstCard.get("uuid").toString();
+			System.out.println("multiverseId : " + multiverseId);
+			System.out.println("uuid : " + uuid);
 
+			Object price = parser.parse(new FileReader("/my projects/magicnotify/src/main/resources/json/AllPrices.json"));
+			JSONObject priceObject = (JSONObject) price;
+			JSONArray data_ = (JSONArray) priceObject.get("data"); // magic 2014 core set get
+			int i = 0;
+			for(i = 0; i < data_.size(); i++){
+				JSONObject uuid_array = (JSONObject) data_.get(i);
+				if(uuid.toString() == uuid_array.toString()){
+					break;
+				}
+			}
+			JSONObject paper = (JSONObject) data_.get(i);
+			JSONObject cardkingdom = (JSONObject) paper.get("retail");
+			JSONObject retail = (JSONObject) cardkingdom.get("foil");
+			String foil = retail.get("2022-06-11").toString();
 
+			System.out.println("price of 2022-06-11 : " + foil);
 
 		} catch (Exception e) {
 			e.printStackTrace();
