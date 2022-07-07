@@ -1,17 +1,13 @@
 package com.hanaglitched.magicnotify;
 
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.io.FileReader;
 
 @SpringBootApplication
 public class MagicnotifyApplication {
 
 	public static void main(String[] args) {
+<<<<<<< Updated upstream
 		JSONParser parser = new JSONParser();
 		try {
 			//https://crunchify.com/how-to-read-json-object-from-file-in-java/
@@ -62,6 +58,8 @@ public class MagicnotifyApplication {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+=======
+>>>>>>> Stashed changes
 		SpringApplication.run(MagicnotifyApplication.class, args);
 	}
 

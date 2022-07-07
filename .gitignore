@@ -38,6 +38,7 @@ out/
 
 ### oauth2 ###
 application-oauth.properties
+application.properties
 
 ### json ###
 AllPrices.json

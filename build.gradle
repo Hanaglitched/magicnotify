@@ -18,7 +18,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 	implementation group: 'com.github.zhanhb', name: 'thymeleaf-layout-dialect', version: '3.0.0'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa' // DB 쿼리 작성을 쉽게 하기 위함
-	implementation 'org.springframework.boot:spring-boot-starter-security' // 스프링 시큐리티
+	implementation group: 'com.querydsl', name: 'querydsl-jpa', version: '5.0.0' // querydsl로 쿼리 작성을 쉽게
+    // https://mvnrepository.com/artifact/com.querydsl/querydsl-core
+    implementation group: 'com.querydsl', name: 'querydsl-core', version: '5.0.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-security' // 스프링 시큐리티
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // 타임리프로 쉽게 웹 화면 구성을 위함
 	implementation 'org.springframework.boot:spring-boot-starter-web' // mvc 웹 구조 사용을 위함
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5' // 타임리프 화면에서 스프링 시큐리티 사용을 위함
